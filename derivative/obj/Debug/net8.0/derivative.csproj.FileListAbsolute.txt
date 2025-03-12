@@ -1,0 +1,14 @@
+/home/javok/Desktop/School/zepe/derivative/bin/Debug/net8.0/derivative
+/home/javok/Desktop/School/zepe/derivative/bin/Debug/net8.0/derivative.deps.json
+/home/javok/Desktop/School/zepe/derivative/bin/Debug/net8.0/derivative.runtimeconfig.json
+/home/javok/Desktop/School/zepe/derivative/bin/Debug/net8.0/derivative.dll
+/home/javok/Desktop/School/zepe/derivative/bin/Debug/net8.0/derivative.pdb
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/derivative.GeneratedMSBuildEditorConfig.editorconfig
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/derivative.AssemblyInfoInputs.cache
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/derivative.AssemblyInfo.cs
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/derivative.csproj.CoreCompileInputs.cache
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/derivative.dll
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/refint/derivative.dll
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/derivative.pdb
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/derivative.genruntimeconfig.cache
+/home/javok/Desktop/School/zepe/derivative/obj/Debug/net8.0/ref/derivative.dll
