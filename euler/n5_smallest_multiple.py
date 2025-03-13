@@ -92,13 +92,8 @@ def smallest_multiple(n:int) -> int:
 
     return res
 
-t = int(input().strip())
-for a0 in range(t):
-    n = int(input().strip())
-    """
-    Vytvaret lookup table prvocisel a taky ktery cislo se sklada z kterych prvocisel
-    To vyzaduje funkce is_prime, prime_factor (rozdel na soucin prvocisel)
-    prvocisla pro usporu jsem vypsal
-    factory bych taky umel vypsat, ale ty uz asi vygeneruju
-    """
-    print(smallest_multiple(n))
+if __name__ == "__main__":
+    t = int(input().strip())
+    for a0 in range(t):
+        n = int(input().strip())
+        print(smallest_multiple(n))
