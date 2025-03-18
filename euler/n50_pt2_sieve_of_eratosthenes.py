@@ -21,4 +21,4 @@ def sieve_of_eratosthenes(n:int) -> list[int]:
 
 
 if __name__ == "__main__":
-    print(sieve_of_eratosthenes(100))
+    print(sieve_of_eratosthenes(int(1e10)))

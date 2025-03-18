@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("derivative")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32afa83c6b7892032cea6cd6f5385b879b9a2a3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("derivative")]
 [assembly: System.Reflection.AssemblyTitleAttribute("derivative")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

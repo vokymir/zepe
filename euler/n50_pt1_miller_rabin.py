@@ -19,7 +19,7 @@ def one_test(n:int, a:int) -> bool:
 
 
 def miller_rabin(n:int, k:int = 40) -> bool:
-    if n in [0,1]:
+    if n < 2:
         return False
     if n in [2,3]:
         return True

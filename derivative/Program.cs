@@ -5,7 +5,6 @@ class Program
     {
         Console.WriteLine(Derivate(Math.Sin, Math.PI));
         Console.WriteLine(DerivateSine(Math.PI));
-
     }
 
     /// <summary>
