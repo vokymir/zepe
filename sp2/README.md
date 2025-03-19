@@ -72,25 +72,25 @@ Matrix dimension: 5000x5000
 Band width: 5
 Will repeat 100 times.
 Time is measured in milliseconds.
- RUN | Dumb | Smart | Equals
-01/100| 1193 | 0201  | True
-02/100| 1172 | 0199  | True
-03/100| 1133 | 0207  | True
-04/100| 1127 | 0204  | True
-05/100| 1121 | 0224  | True
+  RUN  | Dumb | Smart | Equals
+001/100| 1147 | 0203  | True
+002/100| 1153 | 0198  | True
+003/100| 1120 | 0205  | True
+004/100| 1122 | 0204  | True
+005/100| 1155 | 0228  | True
 ...
-95/100| 1221 | 0214  | True
-96/100| 1121 | 0212  | True
-97/100| 1125 | 0207  | True
-98/100| 1126 | 0210  | True
-99/100| 1124 | 0211  | True
-100/100| 1127 | 0208  | True
+095/100| 1138 | 0211  | True
+096/100| 1277 | 0255  | True
+097/100| 1188 | 0219  | True
+098/100| 1156 | 0218  | True
+099/100| 1160 | 0225  | True
+100/100| 1155 | 0220  | True
 
 ###########
 # Average #
 ###########
-Dumb: 1130.19 ms
-Smart: 207.55 ms
+Dumb: 1173.23 ms
+Smart: 217.75 ms
 ```
 
 ## Task 3: Euler+ Contest Medium: #5 Smallest multiple
@@ -127,7 +127,7 @@ which reminds of *floating window* as the window is essentially floating along t
 This repeats until the chain is found or not, in that case a (0, 0) is returned,
 as no chain could be found.
 
-## Bonus B: Euler+ Contest Advanced: #51 Prime digits replacement
+## Bonus B: Euler+ Contest Advanced: #51 Prime digit replacement
 
 The program starts by creating a list (and set) of primes in the searched range and
 all combinations/permutations of the indexed where the * is.

@@ -10,12 +10,12 @@ public class Program
     {
         int n = 5000;
         int m = 5;
-        int repeat = 10;
+        int repeat = 100;
         Stopwatch sw = new Stopwatch();
         long[] t1 = new long[repeat];
         long[] t2 = new long[repeat];
 
-        Console.WriteLine($"Measuring time difference between smart and dumb band matrix multiplication implementation.\nMatrix dimension: {n}x{n}\nBand width: {m}\nWill repeat {repeat} times.\nTime is measured in milliseconds.\n RUN | Dumb | Smart | Equals");
+        Console.WriteLine($"Measuring time difference between smart and dumb band matrix multiplication implementation.\nMatrix dimension: {n}x{n}\nBand width: {m}\nWill repeat {repeat} times.\nTime is measured in milliseconds.\n  RUN  | Dumb | Smart | Equals");
 
         for (int i = 0; i < repeat; i++)
         {
@@ -31,7 +31,7 @@ public class Program
             var res2 = dumat * v;
             t2[i] = sw.ElapsedMilliseconds;
 
-            Console.WriteLine($"{(i + 1).ToString("00")}/{repeat.ToString("00")}| {t1[i].ToString("0000")} | {t2[i].ToString("0000")}  | {res1.Equals(res2)}");
+            Console.WriteLine($"{(i + 1).ToString("000")}/{repeat.ToString("000")}| {t1[i].ToString("0000")} | {t2[i].ToString("0000")}  | {res1.Equals(res2)}");
         }
 
         Console.WriteLine($"\n###########\n# Average #\n###########\nDumb: {t1.Average()} ms \nSmart: {t2.Average()} ms");
