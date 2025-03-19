@@ -5,7 +5,7 @@ MAX_N:int = 40
 
 # list of primes starting at 2
 # for more info see function ensure_primes()
-PRIMES:list[int] = list() 
+PRIMES:list[int] = list()
 
 # e.g. (on position 27) 26 = (1,0,0,0,0,1,0,...) which means 26 = 2 * 13
 FACTORS:dict[int,list[int]] = dict()
@@ -23,7 +23,7 @@ def is_prime(n:int) -> bool:
 
 def ensure_primes(N:int) -> None:
     """
-    If primes are empty generates them. 
+    If primes are empty generates them.
     Primes is a list of prime numbers, from 2 (inclusive) to N (inclusive).
     """
     if len(PRIMES) > 0:
@@ -36,8 +36,8 @@ def ensure_primes(N:int) -> None:
 
 def prime_factor(n:int) -> list[int]:
     """
-    Returns the prime factor of number n. 
-    Returns list of integers. 
+    Returns the prime factor of number n.
+    Returns list of integers.
     Integer on i-th position represents the count of i-th prime number in PRIMES.
     """
     ensure_primes(MAX_N)
@@ -51,7 +51,7 @@ def prime_factor(n:int) -> list[int]:
         while n > 1 and n % prime == 0:
             n //= prime
             factor[i] += 1
-        
+
     return factor
 
 def get_factor(n:int) -> list[int]:

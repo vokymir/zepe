@@ -85,6 +85,7 @@ def find_longest_prime_sum(n:int) -> tuple[int,int]:
     """
     Finds the largest prime that is a sum of the most consecutive primes, where the prime is smaller than n.
     """
+    # edge cases, handled separately
     if n <= 3:
         return n, 1
 
