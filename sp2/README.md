@@ -9,7 +9,7 @@
 The code for this task can be found in the folder **derivative**.
 It is written in C#, dotnet 8.0 and can be run via:
 
-```bash
+```shell
 cd <some_path>/derivative
 dotnet build
 dotnet run
@@ -39,10 +39,10 @@ we operate with numbers between $[-1, 1]$.
 The code for this task can be found in the folder **matrix**.
 It is written in C#, dotnet 9.0 and can be run via:
 
-```bash
+```shell
 cd <some_path>/matrix
 dotnet build
-dotner run
+dotnet run
 ```
 
 Two type of matricies was created, one storing all values inside a matrix,
@@ -53,8 +53,8 @@ The memory complexity for both matricies is, relative to the size of double,
 when saying that $n$ is the dimension of a matrix (number of rows and columns),
 and $m$ is the width of band:
 
-$Complexity(DumbMatrix) = n \cdot n$
-$Complexity(SmartMatrix) = (2 \cdot m - 1) \cdot n - m \cdot (m - 1)$
+$$Complexity(DumbMatrix) = n \cdot n $$
+$$Complexity(SmartMatrix) = (2 \cdot m - 1) \cdot n - m \cdot (m - 1)$$
 
 The second one, though looking more intimidatingly is for small $m$ obviously better.
 The first term represents the count of all values, if we doesn't take
@@ -66,7 +66,7 @@ When measuring the time difference, only the time spent multipling is taken
 into account. The output of spoken program is below (shortened), showing
 the major time difference.
 
-```cli
+```shell
 Measuring time difference between smart and dumb band matrix multiplication implementation.
 Matrix dimension: 5000x5000
 Band width: 5
@@ -101,7 +101,7 @@ Smart: 207.55 ms
 > The proofs of successfully submiting them are in folder **euler/proofs**.
 > Can be run (assuming you have an input) via:
 
-```bash
+```shell
 cd <some_path>/euler
 python <task_file>.py
 ```
@@ -111,8 +111,7 @@ into their prime factors. The smallest multiple is multiple of these primes,
 where each prime is included that many times, that it is in the number that
 has it the most times.
 Eg. the smallest multiple of 4:
-Prime factors:
-$2 = 2, 3 = 3, 4 = 2^2$
+Prime factors: $2 = 2, 3 = 3, 4 = 2^2$
 So the smallest multiple is $2^2 \cdot 3 = 12$.
 
 The primes could have been precalculated, but the program calculate them in the runtime.
@@ -141,13 +140,13 @@ Lastly, select the (lexicographically) smallest family and return it.
 As mentioned above, all image proofs of successfully solved challenges are in the folder
 **euler/proofs** and can be described as:
 
-![All solved]("./euler/proofs/all_solved.png")
+![All solved](./euler/proofs/all_solved.png)
 This image shows, that all three required challenges were solved.
 Note, that you can see my avatar in the upper right corner (I added it just for this).
 
-![Solved at total three]("./euler/proofs/solved_total_three.png")
+![Solved at total three](./euler/proofs/solved_total_three.png)
 This image shows the same, but in another settings.
 
-![My profile with avatar]("./euler/proofs/my_profile_with_picture.png")
+![My profile with avatar](./euler/proofs/my_profile_with_picture.png)
 As I wrote earlier, the avatar I add just for this occasion, so you can distinguish it.
 
