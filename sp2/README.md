@@ -12,7 +12,8 @@ It is written in C#, dotnet 8.0 and can be run via:
 ```bash
 cd <some_path>/derivative
 dotnet build
-dotner run```
+dotnet run
+```
 
 ### Subtask a: Calculate the derivative for 𝑥 = 𝜋
 
@@ -41,7 +42,8 @@ It is written in C#, dotnet 9.0 and can be run via:
 ```bash
 cd <some_path>/matrix
 dotnet build
-dotner run```
+dotner run
+```
 
 Two type of matricies was created, one storing all values inside a matrix,
 the second only storing non-zero values inside a band (note that these values
@@ -64,7 +66,7 @@ When measuring the time difference, only the time spent multipling is taken
 into account. The output of spoken program is below (shortened), showing
 the major time difference.
 
-```
+```cli
 Measuring time difference between smart and dumb band matrix multiplication implementation.
 Matrix dimension: 5000x5000
 Band width: 5
@@ -88,7 +90,8 @@ Time is measured in milliseconds.
 # Average #
 ###########
 Dumb: 1130.19 ms
-Smart: 207.55 ms```
+Smart: 207.55 ms
+```
 
 ## Task 3: Euler+ Contest Medium: #5 Smallest multiple
 
@@ -100,7 +103,8 @@ Smart: 207.55 ms```
 
 ```bash
 cd <some_path>/euler
-python <task_file>.py```
+python <task_file>.py
+```
 
 The program search for smallest multiple by splitting all numbers below $n$
 into their prime factors. The smallest multiple is multiple of these primes,
