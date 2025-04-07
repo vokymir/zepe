@@ -23,6 +23,8 @@ How this works out:
 
 ## Task 2: Median of medians D&C method
 
+Used the exact algorithm as in presentation, only change is
+the choosing of pivot is using the median of medians method.
 Not showing finding median in quintuplets, that's trivial.
 
 - Step 1:
@@ -160,3 +162,16 @@ meaning the searched median is in A_2.
 Therefore, the median is 16.
 
 ## Task 3: Square root
+
+Algorith which takes integer *n* and integer *k* as parameters:
+Let LOW = 0, HIGH = n, ANS, MID be floats.
+
+1. MID = (HIGH - LOW) / 2
+2. Based on MID * MID do either:
+    - \< n: LOW = MID
+    - \> n: HIGH = MID
+    - \= n: return MID
+3. If ANS - MID * MID < 10^(-k): return MID
+4. ANS = MID * MID
+5. Repeat from step 1.
+
