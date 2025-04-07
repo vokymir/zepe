@@ -1,6 +1,6 @@
 # KIV-ZEPE: SP3
 
-Jakub Vokoun, A23B0235P, Hours spent: 2.5 so far
+Jakub Vokoun, A23B0235P, Hours spent: 3.5 so far
 
 ## Task 1: Simple D&C median
 
@@ -166,12 +166,45 @@ Therefore, the median is 16.
 Algorith which takes integer *n* and integer *k* as parameters:
 Let LOW = 0, HIGH = n, ANS, MID be floats.
 
-1. MID = (HIGH - LOW) / 2
-2. Based on MID * MID do either:
-    - \< n: LOW = MID
-    - \> n: HIGH = MID
+1. MID = (HIGH \- LOW) / 2
+2. Based on MID \* MID do either:
+    - \< n: LOW \= MID
+    - \> n: HIGH \= MID
     - \= n: return MID
-3. If ANS - MID * MID < 10^(-k): return MID
-4. ANS = MID * MID
+3. If ANS \- MID \* MID \< 10\^(\-k): return MID
+4. ANS \= MID \* MID
 5. Repeat from step 1.
 
+## Task 4: Inversions
+
+### Subtask a: All inversions
+
+A = \[2,3,8,6,1\]
+
+Inversions:
+
+- \[2,1\]
+- \[3,1\]
+- \[8,6\]
+- \[8,1\]
+- \[6,1\]
+
+### Subtask b: Permutation
+
+A = \[1,2,3,...,n\]
+
+To maximize the number of inversions for the element on *k*-th position,
+we must store as many smaller number on the positions higher than *k*.
+
+When applied to the whole array, it's clear we must sort it in descending order.
+
+Maximized inversions of A = \[n,n-1,n-2,...,3,2,1\]
+
+The number of inversions for element on *m*-th position is n - m.
+When applied to the whole array, it's:
+
+$\sum_{m = 1}^{n} (n - m) = n \cdot \frac{n - 1}{2}$
+
+### Subtask c: Count inversions algorithm
+
+TODO
