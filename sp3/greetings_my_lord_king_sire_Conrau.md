@@ -1,10 +1,10 @@
 # KIV-ZEPE: SP3
 
-Jakub Vokoun, A23B0235P, Hours spent: 3.5 so far
+Jakub Vokoun, A23B0235P, Hours spent: 4.5 so far
 
 ## Task 1: Simple D&C median
 
-Pivot is always the smallest or largest element.
+To ensure worst case, pivot must be the smallest or largest element in every step.
 E.g.: \[4,3,2,1,8,7,6,5,0\]
 
 How this works out:
@@ -160,6 +160,8 @@ That is equal to the length of A_1 but less than lengths of A_1 + A-2
 meaning the searched median is in A_2.
 
 Therefore, the median is 16.
+That's because the algorithm in presentation doesn't recognize the difference
+between even and odd length arrays and always choose one element from the array.
 
 ## Task 3: Square root
 
@@ -193,18 +195,51 @@ Inversions:
 
 A = \[1,2,3,...,n\]
 
-To maximize the number of inversions for the element on *k*-th position,
+To maximize the number of inversions for the element on *k* -th position,
 we must store as many smaller number on the positions higher than *k*.
 
 When applied to the whole array, it's clear we must sort it in descending order.
 
 Maximized inversions of A = \[n,n-1,n-2,...,3,2,1\]
 
-The number of inversions for element on *m*-th position is n - m.
+The number of inversions for element on *m* -th position is n - m.
 When applied to the whole array, it's:
-
-$\sum_{m = 1}^{n} (n - m) = n \cdot \frac{n - 1}{2}$
 
 ### Subtask c: Count inversions algorithm
 
-TODO
+When given array A, create helper arrays B, C of the same length and integer S.
+The B array is meant for storing the number of inversions for the item
+on given position.
+The C array is for storing the position of nearest succeding smaller number
+for every number in A.
+The variable S is just for Sum, as it counts on-the-fly avoiding
+one additional go-through array B at the end.
+
+The proposed algorithm works by going through the array A backwards.
+On every position can happen either:
+
+- It's the initial position of algorithm (last item in array A):
+  - Set B\[position\] = 0
+  - Set C\[position\] = -1
+  - Set S = 0
+- The number A\[position\] is greater than A\[position+1\]:
+  - Set B\[position\] = B\[position+1\] + 1
+  - Set C\[position\] = position + 1
+  - Add B\[position\] to S
+- The number A\[position\] is not greater than A\[position+1\]:
+  - Repeat until A\[position\] is greater than A\[D\]:
+    1. D = C\[D\] (initially C\[position\])
+    2. if C\[D\] == -1 (end of array): that's zero inversions
+  - Set B\[position\] = B\[D\] + 1
+  - Set C\[position\] = D
+  - Add B\[position\] to S
+
+By following these rules while traversing the array A from end to beggining,
+the algorithm will find the total number of inversions in O(nlogn) time,
+but O(3n) memory complexity.
+
+The time complexity is O(n) for the algorithm must traverse the whole array once,
+and time it by logn, because on every position in the array, it shall not take more
+than O(logn) operations to find the nearest smallest number.
+(The reasoning behind this is in my opinion pretty clear and it is very similiar
+to the one in SP1 Bonus 1-B, where I explained it in more detail.)
